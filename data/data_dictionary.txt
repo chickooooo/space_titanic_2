@@ -1,0 +1,39 @@
+PassengerId:
+    - a unique Id for each passenger.
+    - each Id takes the form gggg_pp where gggg indicates a group the passenger is travelling with and pp is their number within the group.
+    - people in a group are often family members, but not always.
+
+HomePlanet:
+    - the planet the passenger departed from
+    - typically their planet of permanent residence
+
+CryoSleep:
+    - indicates whether the passenger elected to be put into suspended animation for the duration of the voyage.
+    - passengers in cryosleep are confined to their cabins.
+
+Cabin:
+    - the cabin number where the passenger is staying.
+    - takes the form deck/num/side, where side can be either P for Port or S for Starboard.
+
+Destination:
+    - the planet the passenger will be debarking to.
+
+Age:
+    - the age of the passenger.
+
+VIP:
+    - Whether the passenger has paid for special VIP service during the voyage.
+
+RoomService,
+FoodCourt,
+ShoppingMall,
+Spa,
+VRDeck:
+    - amount the passenger has billed at each of the Spaceship Titanic's many luxury amenities.
+
+Name:
+    - the first and last names of the passenger.
+
+Transported:
+    - whether the passenger was transported to another dimension.
+    - this is the target, the column you are trying to predict.
