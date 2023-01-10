@@ -2,12 +2,12 @@ import pandas as pd
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
 
-class CustomDataPreparationPipeline(BaseEstimator, TransformerMixin):
+class CustomDataPreparation(BaseEstimator, TransformerMixin):
     
     def __init__(self) -> None:
         self.aggregates = {}
 
-    def fit(self, X: pd.DataFrame, y: pd.Series):
+    def fit(self, X: pd.DataFrame):
         self.columns = X.columns
         self.__get_aggregates(X)
         return self
@@ -28,8 +28,9 @@ class CustomDataPreparationPipeline(BaseEstimator, TransformerMixin):
         data["num_in_cabin"] = X.cabin.apply(lambda x: x.split("/")[1] if pd.notna(x) else x)
         data["side"] = X.cabin.apply(lambda x: x.split("/")[2] if pd.notna(x) else x)
         data.deck.fillna(value=self.aggregates["deck"], inplace=True)
-        data.num_in_cabin.fillna(value=self.aggregates["deck"], inplace=True)
-        data.side.fillna(value=self.aggregates["deck"], inplace=True)
+        data.side.fillna(value=self.aggregates["side"], inplace=True)
+        data.num_in_cabin.fillna(value=self.aggregates["num_in_cabin"], inplace=True)
+        data.num_in_cabin = data.num_in_cabin.astype("int")
 
         data["total_spending"] = data.room_service + data.food_court + data.shopping_mall + data.spa + data.vr_deck
 
