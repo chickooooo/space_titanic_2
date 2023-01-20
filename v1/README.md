@@ -15,7 +15,7 @@
 
 ### Abstract
 This project focus more on creating a structure that will ease model development process, rather than focusing on accuracy of the model. Refer to [v2](../v2) directory for best performing model.<br>
-Testing data pipelines and ensuring the structure of data feed to the model is of proper format, is a crutial part of machine learning model development. So, this project also demonstrates how testcases can be created to test different parts of the model building process. Here **pytest** testing framework is used to create testcases.<br>
+Testing data pipelines and ensuring the structure of data feed to the model is of proper format, is a crucial part of machine learning model development. So, this project also demonstrates how testcases can be created to test different parts of the model building process. Here **pytest** testing framework is used to create testcases.<br>
 <br>
 
 This project contains **Data Preparation** and **Data Preprocessing** pipelines and their respective testcases for testing those pipelines.<br>

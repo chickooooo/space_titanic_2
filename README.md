@@ -1,4 +1,5 @@
 # Spaceship Titanic Competition
+<br>
 <b>Goal:</b> Predict which passengers are transported to an alternate dimension<br>
 <br>
 <br>
@@ -18,12 +19,12 @@ To help rescue crews and retrieve the lost passengers, you are challenged to pre
 <br>
 ## Version 1:<br>
 [v1](/v1) directory contains base model to set a baseline for model performance.<br>
-This directory has pipeline scripts and testcases for those pipelines. Generic testcases for the structure of dataset is also created.<br>
-This directory focus more on creating a structure that will ease model development process, rather than focusing on accuracy of the model (dealt with in v2).<br>
+This directory has pipeline scripts and testcases for those pipelines. Generic testcases to verify the structure of the dataset is also present.<br>
+This directory focus more on creating a structure that will ease model development process, rather than focusing on accuracy of the model (refer to v2).<br>
 <br>
 <br>
 ## Version 2:<br>
 [v2](/v2) directory focus on creating the best performing model.<br>
 It contains detailed Exploratory Data Analysis of the data and systematic Missing value imputation.<br>
 It also focus on feature engineering and data preprocessing techniques.<br>
-At last selects the best performing model from a variety of models and generating final score.<br>
+At last, selects the best performing model from a variety of models and generates final score.<br>

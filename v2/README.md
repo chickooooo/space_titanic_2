@@ -31,8 +31,8 @@
 <br>
 <br>
 ### Exploratory Data Analysis
-Exploratory Data Analysis notebooks contains detailed analysis of the given data and highlights some key findings that are crutial for next steps in the process.<br>
-Each section contains a **note** which highlights the important point and **action** which indicates the action that needs to be performed.<br>
+Exploratory Data Analysis notebooks contains detailed analysis of the given data and highlights some key findings that are crucial for next steps in the process.<br>
+Each section contains a **note** which highlights the important points and **action** which indicates the action that needs to be performed.<br>
 <br>
 ### Handling Missing Values
 In Handling Missing Values notebook, instead of just imputing missing values with mode or median, a more systematic approach is used. <br>
